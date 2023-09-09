@@ -1,6 +1,8 @@
 /** @format */
 
-const ToDoItem = ({ todo, dispatch }) => {
+const ToDoItem = ({ todo }) => {
+  const dispatch = useContext(TodoContext);
+
   const handleChangeCheckbox = () => {
     dispatch({
       type: todo.complete ? "UNDO_TODO" : "DO_TODO",

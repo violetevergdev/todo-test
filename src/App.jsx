@@ -1,6 +1,6 @@
 /** @format */
 
-import { useState, useReducer, useContext } from "react";
+import { useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Filter from "./components/Filter";
 import ToDoList from "./components/ToDoList";
@@ -25,9 +25,6 @@ const initialTodos = [
   },
 ];
 
-const AddTodo = () => {
-  const dispatch = useContext(TodoContext);
-};
 const filterReducer = (state, action) => {
   switch (action.type) {
     case "SHOW_ALL":

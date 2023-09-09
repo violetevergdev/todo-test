@@ -1,6 +1,9 @@
 /** @format */
+import { useState, useReducer, useContext } from "react";
 
 const AddTodo = ({ dispatch }) => {
+  const dispatch = useContext(TodoContext);
+
   const [task, setTask] = useState("");
 
   const handleSubmit = (e) => {
