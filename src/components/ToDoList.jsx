@@ -2,7 +2,7 @@
 
 import ToDoItem from "./ToDoItem";
 
-const ToDoList = ({ dispatch, todos }) => {
+const ToDoList = ({ todos }) => {
   return (
     <ul>
       {todos.map((todo) => (

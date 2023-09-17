@@ -82,9 +82,6 @@ const App = () => {
 
     return false;
   });
-  const handleChangeInput = (e) => {
-    setTask(e.target.value);
-  };
 
   return (
     <TodoContext.Provider value={dispatchTodos}>

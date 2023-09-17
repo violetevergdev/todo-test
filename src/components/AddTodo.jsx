@@ -1,7 +1,9 @@
 /** @format */
-import { useState, useReducer, useContext } from "react";
+import { useState, useContext } from "react";
+import TodoContext from "./TodoContext";
+import { v4 as uuidv4 } from "uuid";
 
-const AddTodo = ({ dispatch }) => {
+const AddTodo = () => {
   const dispatch = useContext(TodoContext);
 
   const [task, setTask] = useState("");

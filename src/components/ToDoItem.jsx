@@ -1,4 +1,7 @@
 /** @format */
+import { useContext } from "react";
+
+import TodoContext from "./TodoContext";
 
 const ToDoItem = ({ todo }) => {
   const dispatch = useContext(TodoContext);
